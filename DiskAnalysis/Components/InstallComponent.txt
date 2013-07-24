@@ -1,0 +1,3 @@
+1 Install Commponents (my delphi version is D7)
+2 Under the InstallDir mkdir common
+3 copy mssa*.pas and compiler.inc to common folder

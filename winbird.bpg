@@ -1,0 +1,39 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = ModifyWin.exe wbCleaner.exe ProcessWalk.exe MagicIPSet.exe \
+  MultiFilesRenamer.exe NetworkMon.exe MagicShutDown.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+ModifyWin.exe: ModifyWin.dpr
+  $(DCC)
+
+wbCleaner.exe: wB-Cleaner\wbCleaner.dpr
+  $(DCC)
+
+ProcessWalk.exe: ProcessWalk\ProcessWalk.dpr
+  $(DCC)
+
+MagicIPSet.exe: MagicIPSet\MagicIPSet.dpr
+  $(DCC)
+
+MultiFilesRenamer.exe: MultiFilesRename\MultiFilesRenamer.dpr
+  $(DCC)
+
+NetworkMon.exe: NetworkMon\NetworkMon.dpr
+  $(DCC)
+
+MagicShutDown.exe: MagicShutDown\MagicShutDown.dpr
+  $(DCC)
+
+

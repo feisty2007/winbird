@@ -1,0 +1,23 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#3#14#1#6'Height'#3#147#1#3'Top'#3#169#0#5'W'
+  +'idth'#3#225#1#18'HorzScrollBar.Page'#3#224#1#18'VertScrollBar.Page'#3#146#1
+  +#13'ActiveControl'#7#15'edt_thunder_dir'#11'BorderIcons'#11#12'biSystemMenu'
+  +#0#11'BorderStyle'#7#8'bsDialog'#7'Caption'#6#15'Thunder Cleaner'#12'ClientH'
+  +'eight'#3#147#1#11'ClientWidth'#3#225#1#8'Position'#7#15'poDesktopCenter'#0#6
+  +'TLabel'#6'Label1'#4'Left'#2#27#6'Height'#2#13#3'Top'#3'Y'#1#5'Width'#3#199#0
+  +#7'Caption'#6'!Free Software With any Warnning! '#11'ParentColor'#8#0#0#9'TG'
+  +'roupBox'#9'GroupBox1'#4'Left'#2#25#6'Height'#2'A'#3'Top'#2#20#5'Width'#3#167
+  +#1#7'Caption'#6#24'Select Thunder Directory'#12'ClientHeight'#2'/'#11'Client'
+  +'Width'#3#163#1#8'TabOrder'#2#0#0#5'TEdit'#15'edt_thunder_dir'#4'Left'#2#11#6
+  +'Height'#2#23#3'Top'#2#5#5'Width'#3'B'#1#8'TabOrder'#2#0#0#0#7'TButton'#7'Bu'
+  +'tton1'#4'Left'#3']'#1#6'Height'#2#25#3'Top'#2#5#5'Width'#2'8'#7'Caption'#6#2
+  +'..'#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#1#0#0#0#7'TButton'#7'Button'
+  +'2'#4'Left'#3'u'#1#6'Height'#2#25#3'Top'#2'`'#5'Width'#2'K'#7'Caption'#6#11
+  +'Begin Clear'#7'OnClick'#7#12'Button2Click'#8'TabOrder'#2#1#0#0#5'TMemo'#5'M'
+  +'emo1'#4'Left'#2#28#6'Height'#3#198#0#3'Top'#3#128#0#5'Width'#3#160#1#13'Lin'
+  +'es.Strings'#1#6#0#0#8'TabOrder'#2#2#0#0#11'TOpenDialog'#11'OpenDialog1'#5'T'
+  +'itle'#6#18'Open existing file'#6'Filter'#6#14'Exe File|*.exe'#4'left'#3#212
+  +#0#3'top'#3#183#0#0#0#0
+]);

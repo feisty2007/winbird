@@ -1,0 +1,32 @@
+<project name="winbird" basedir="." default="build">
+	<property name="dcu" value="dcu"/>
+	<property name="bin" value="bin"/>
+	<property name="src" value="${basedir}"/>
+	
+	<patternset id="sources" >
+    <include  name="${src}" />
+    <include  name="${src}/**" />
+  </patternset>
+  
+	<target name="prepare" >
+    <mkdir dir="${dcu}" />
+    <mkdir dir="${bin}" />
+  </target>
+	<target name="build" depends="prepare">
+		<dcc basedir="${src}" source="modifywin.dpr">
+      <exeoutput path="${bin}" />
+      <dcuoutput path="${dcu}" />
+      <!-- optimize  value="true" / -->
+
+      <debug     value="true" />
+
+      <hugestrings value="true" />
+
+
+      <unitpath     refid="sources"   />
+      <includepath  refid="sources"   />
+    </dcc>
+	</target>
+	<target name="run">
+	</target>
+</project>

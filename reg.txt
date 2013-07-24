@@ -1,0 +1,726 @@
+REGEDIT4
+
+;Windows 2000 安全,优化,注册表批处理文件,请根据自己的要求修改,注释用;
+;Author : LittleYu.COM 打造安全快速的 Windows 桌面系统
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer]
+;禁止 快捷方式
+"link"=hex:00,00,00,00
+;经典方式启动
+"ShellState"=hex:24,00,00,00,23,08,01,00,00,00,00,00,00,00,00,00,00,00,00,00,\
+  01,00,00,00,0d,00,00,00,00,00,00,00,00,00,00,00
+;搜索功能总是支持搜索隐藏文件
+"SearchHidden"=dword:00000001
+"SearchSystemDirs"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons]
+;删除快捷方式上的箭头
+"29"="%WINDIR%\\SYSTEM32\\docprop.dll,1"
+
+[HKEY_CLASSES_ROOT\lnkfile]
+;删除快捷方式上的箭头
+"IsShortcut"=-
+
+;桌面显示版本
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"PaintDesktopVersion"=dword:00000001
+[HKEY_USERS\.DEFAULT\Control Panel\Desktop]
+"PaintDesktopVersion"=dword:00000001
+
+;黑底白字,保护视力
+[HKEY_USERS\.DEFAULT\Control Panel\Colors]
+"Background"="00 00 00"
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Background"="00 00 00"
+
+;开机打开Numlock键
+[HKEY_USERS\.DEFAULT\Control Panel\Keyboard]
+"InitialKeyboardIndicators"="2"
+
+[HKEY_CLASSES_ROOT\Directory\shell\cmd]
+@="CMD DOS"
+[HKEY_CLASSES_ROOT\Directory\shell\cmd\command]
+@="cmd.exe /k \"cd %L\""
+[HKEY_CLASSES_ROOT\Drive\shell\cmd]
+@="CMD DOS"
+[HKEY_CLASSES_ROOT\Drive\shell\cmd\command]
+@="cmd.exe /k \"cd %L\""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\lanmanserver\parameters]
+;禁止 $C $D
+"AutoShareServer"=dword:00000000
+;禁止 $admin
+"AutoShareWks"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa]
+;禁止匿名列举SAM用户和共享 $IPC (禁止匿名连接$IPC dword:00000002 SQL Server服务器上慎用)
+"restrictanonymous"=dword:00000001
+
+;关闭Windows2000的445端口,重新启动才能生效,重要
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Parameters]
+"SMBDeviceEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+;关机时清理页面文件
+;"ClearPageFileAtShutdown"=dword:00000001
+;正运行的文件被强制保留在内存中而不移入虚拟内存(512M内存推荐)
+;"DisablePagingExecutive"=dword:00000001
+;启用大的系统缓存
+"LargeSystemCache"=dword:00000000
+
+;缩短chkdsk的等待时间为0,加速启动
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager]
+"AutoChkTimeOut"=dword:00000000
+
+;设置 Windows 临时文件目录
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+;"TEMP"="C:\\Temp"
+;"TMP"="C:\\Temp"
+
+;设置用户临时文件目录
+[HKEY_CURRENT_USER\Environment]
+;"TEMP"="C:\\Temp"
+;"TMP"="C:\\Temp"
+
+;系统启动故障,自动重新启动
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl]
+"CrashDumpEnabled"=dword:00000000
+"LogEvent"=dword:00000000
+"SendAlert"=dword:00000000
+
+;禁止Dr. Watson自动保存调试信息
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug]
+"Auto"="0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DrWatson]
+"NumberOfCrashes"=dword:00000000
+"WaveFile"=""
+"DumpSymbols"=dword:00000000
+"DumpAllThreads"=dword:00000000
+"AppendToLogFile"=dword:00000000
+"VisualNotification"=dword:00000000
+"SoundNotification"=dword:00000000
+"CreateCrashDump"=dword:00000000
+"Instructions"=dword:0000000a
+"MaximumCrashes"=dword:0000000a
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+;HTTP 1.0 Connection:8
+"MaxConnectionsPer1_0Server"=dword:00000008
+;HTTP 1.1 Connection:4
+"MaxConnectionsPerServer"=dword:00000004
+
+;关机时不保存设置
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+;"NoSaveSettings"=dword:00000001
+
+;打开regedit 时不展开注册表
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit]
+"LastKey"=""
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters]
+;参考资料:http://support.microsoft.com/kb/120642/zh-cn
+;防止ICMP重定向报文的攻击
+"EnableICMPRedirect"=dword:00000000
+;不支持IGMP协议
+"IGMPLevel"=dword:00000000
+;不支持路由功能 
+"IPEnableRouter"=dword:00000000
+;禁止死网关监测技术 
+"DeadGWDetectDefault"=dword:00000000
+;禁止响应 ICMP 地址掩码请求。
+"EnableAddrMaskReply"=dword:00000000
+;防止SYN洪水攻击使 TCP 调整 SYN-ACK 的重传。配置此值后，在遇到 SYN 攻击时，对连接超时的响应将更快速。在超过 TcpMaxHalfOpen 或 TcpMaxHalfOpenRetried 的值后，将触发 SYN 攻击保护
+"SynAttackProtect"=dword:00000002
+;指定触发 SYN 洪水攻击保护所必须超过的 TCP 连接请求数的阈值。
+"TcpMaxPortsExhausted"=dword:00000005
+;在启用 SynAttackProtect 后，该值指定处于 SYN_RCVD 状态的 TCP 连接数的阈值。在超过 SynAttackProtect 后，将触发 SYN 洪水攻击保护
+"TcpMaxHalfOpen"=dword:000001f4
+;在启用 SynAttackProtect 后，该值指定处于至少已发送一次重传的 SYN_RCVD 状态中的 TCP 连接数的阈值。在超过 SynAttackProtect 后，将触发 SYN 洪水攻击保护
+"TcpMaxHalfOpenRetried"=dword:00000190
+;控制在响应一次 SYN 请求之后、在取消重传尝试之前 SYN-ACK 的重传次数。
+"TcpMaxConnectResponseRetransmissions"=dword:00000002
+;指定在终止连接之前 TCP 重传一个数据段（不是连接请求段）的次数。
+"TcpMaxDataRetransmissions"=dword:00000002
+;限制停止在TIME_WAIT状态的最长时间。有效范围：30-300（十进制）秒为单位默认值：0xF0（十进制 240）,设置30秒
+"TcpTimedWaitDelay"=dword:0000001e
+;将该值设置为 1（默认值）可强制 TCP 查找在通向远程主机的路径上的最大传输单元或最大数据包大小。攻击者可能将数据包强制分段，这会使堆栈不堪重负。对于不是来自本地子网的主机的连接，将该值指定为 0 可将最大传输单元强制设为 576 字节。
+"EnablePMTUDiscovery"=dword:00000000
+;指定 TCP 尝试通过发送持续存活的数据包来验证空闲连接是否仍然未被触动的频率。5分钟
+"KeepAliveTime"=dword:000493e0
+;指定计算机在收到名称发布请求时是否发布其 NetBIOS 名称。禁止
+"NoNameReleaseOnDemand"=dword:00000001
+;Receive window size:371260
+"TcpWindowSize"=dword:0005aa3c
+"SackOpts"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters]
+;IIS5.0禁用WebDAV http://support.microsoft.com/default.aspx?kbid=241520
+"DisableWebDAV"=dword:00000001
+
+;自动登入系统
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon]
+;"AutoAdminLogon"="1"
+;"DefaultUserName"="Administrator"
+;"DefaultPassword"=""
+
+;自动运行 (在Server版本中每次都需要登录)
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run]
+; "autolog"="regedit /s c:\\winnt\\autolog.reg"
+
+
+;修改服务进程的启动方式,不启用不常用进程,以加快速度,3为手动,4为禁用
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Alerter]
+;"Description"="通知所选用户和计算机有关系统管理级警报。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BITS]
+;"Description"="用闲置网络带宽在后台传输文件。如果此服务被禁用，那么任何依赖于 BITS 的功能，例如 Windows Update 或 MSN Explorer，都将不能自动下载程序和其它信息。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\cisvc]
+;"DisplayName"="Indexing Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Dfs]
+;"Description"="管理分布于局域网或广域网的逻辑卷。"
+;"DisplayName"="Distributed File System"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmadmin]
+;"DisplayName"="Logical Disk Manager Administrative Service"
+;"Description"="磁盘管理请求的系统管理服务"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\dmserver]
+;"DisplayName"="Logical Disk Manager"
+;"Description"="逻辑磁盘管理器监视狗服务"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Fax]
+;"Description"="帮助您发送和接收传真"
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LicenseService]
+;"DisplayName"="License Logging Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LmHosts]
+;"Description"="允许对“TCP/IP 上 NetBIOS (NetBT)”服务以及 NetBIOS 名称解析的支持。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MDM]
+;"DisplayName"="Machine Debug Manager"
+;"Description"="支持对 Visual Studio 和脚本调试器进行本地和远程调试。如果该服务停止，调试器将不能正常工作。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Messenger]
+;"Description"="发送和接收系统管理员或者“警报器”服务传递的消息。"
+;"DisplayName"="Messenger"
+"Start"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSDTC]
+;"Description"="并列事务，是分布于两个以上的数据库，消息队列，文件系统，或其它事务保护资源管理器。"
+;"DisplayName"="Distributed Transaction Coordinator"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\MSFTPSVC]
+;"Description"="通过 Internet 信息服务的管理单元提供 FTP 连接和管理。"
+;"DisplayName"="FTP Publishing Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NtmsSvc]
+;"Description"="管理可移动媒体、驱动程序和库。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Schedule]
+;"Description"="允许程序在指定时间运行。"
+;"DisplayName"="Task Scheduler"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SENS]
+;"Description"="跟踪系统事件，如登录 Windows，网络以及电源事件等。将这些事件通知给 COM+ 事件系统 “订阅者(subscriber)”。"
+;"DisplayName"="System Event Notification"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\seclogon]
+;"Description"="启用替换凭据下的启用进程。如果此服务被终止，此类型登录访问将不可用。如果此服务被禁用，任何依赖它的服务将无法启动。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\SMTPSVC]
+;"Description"="跨网传送电子邮件"
+;"DisplayName"="Simple Mail Transport Protocol (SMTP)"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkSvr]
+;"Description"="保存文件在域中卷之间移动的信息。"
+;"DisplayName"="Distributed Link Tracking Server"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TrkWks]
+;"Description"="当文件在网络域的 NTFS 卷中移动时发送通知。"
+;"DisplayName"="Distributed Link Tracking Client"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ProtectedStorage]
+;"Description"="提供对敏感数据(如私钥)的保护性存储，以便防止未授权的服务，过程或用户对其的非法访问。"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\RemoteRegistry]
+;"Description"="允许远程注册表操作。"
+;"DisplayName"="Remote Registry Service"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\srservice]
+;执行系统还原功能。 请从“我的电脑”的属性中的系统还原选项卡关闭系统还原。
+"Start"=dword:00000003
+
+;安装许可证服务器并且在连接到一台终端服务器时提供注册客户端许可证。
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermServLicensing]
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TermService]
+;"Description"="提供多会话环境允许客户端设备访问虚拟的 Windows 2000 Professional 桌面会话以及运行在服务器上的基于 Windows 的程序。"
+;"DisplayName"="Terminal Services"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W32Time]
+;"Description"="设置计算机时钟。"
+;"DisplayName"="Windows Time"
+"Start"=dword:00000003
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\wuauserv]
+;"Description"="允许下载并安装 Windows 更新。如果此服务被禁用，计算机将不能使用 Windows Update 网站的自动更新功能。"
+;"DisplayName"="Automatic Updates"
+"Start"=dword:00000003
+
+;修改Explorer显示界面
+;在地址栏、标题栏中显示完整路径
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CabinetState]
+"FullPath"=dword:00000001
+"FullPathAddress"=dword:00000001
+"Settings"=hex:0c,00,02,00,0b,01,06,00,60,00,00,00
+
+;显示所有文件、显示所有文件扩展名、使用传统文件夹
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"Hidden"=dword:00000001
+"HideFileExt"=dword:00000000
+"WebView"=dword:00000000
+"ClassicViewState"=dword:00000000
+"ShowSuperHidden"=dword:00000000
+"NoNetCrawling"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer]
+"IconUnderline"=hex(0):03,00,00,00
+
+;去除"单击这里开始"箭头 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"NoStartBanner"=dword:01000000
+
+;取消计划任务
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RemoteComputer\NameSpace\{D6277990-4C6A-11CF-8D87-00AA0060F5BF}]
+
+;取消登陆输入方法
+[-HKEY_USERS\.DEFAULT\Keyboard Layout\Preload]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\4080110900063D11C8EF00054038389C\Usage]
+"ProductNonBootFiles"=dword:318a0025
+
+[HKEY_CURRENT_USER\Control Panel\Desktop]
+"MenuShowDelay"="155"
+"UserPreferencesMask"=hex:a0,1a,00,80
+
+[HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
+"MinAnimate"="0"
+
+;设置Explorer的显示格式
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\ShellFolder]
+"Attributes"=dword:f0500174
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams]
+"Settings"=hex:09,00,00,00,04,00,00,00,00,00,00,00,00,77,7e,13,73,35,cf,11,ae,\
+  69,08,00,2b,2e,12,62,04,00,00,00,1c,00,00,00,43,00,00,00
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Streams\Defaults]
+"{F3364BA0-65B9-11CE-A9BA-00AA004AE837}"=hex:1c,00,00,00,04,00,00,00,00,00,00,\
+  00,00,00,6c,00,03,00,00,00,01,00,00,00,03,00,00,00,f0,f0,f0,f0,14,00,03,00,\
+  6c,00,00,00,00,00,00,00,30,00,00,00,fd,df,df,fd,0e,00,04,00,20,00,10,00,28,\
+  00,00,00,00,00,00,00,01,00,00,00,02,00,00,00,03,00,00,00,ed,00,60,00,78,00,\
+  78,00,00,00,00,00,01,00,00,00,02,00,00,00,03,00,00,00,ff,ff,ff,ff
+
+;恢复原始IE工具条
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Toolbar]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Explorer Bars]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Extensions]
+
+
+;Anti ActiveX 禁用一些广告或者流氓网页或者危险 ActiveX 插件
+
+;Adodb.Stream 2.5
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{4B106874-DD36-11D0-8B44-00A024DD9EFF}]
+"Compatibility Flags"=dword:00000400
+
+;Adodb.Stream 2.7
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00000566-0000-0010-8000-00AA006D2EA4}]
+"Compatibility Flags"=dword:00000400
+
+;0006_cracks_1
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{018B7EC3-EECA-11D3-8E71-0000E82C6C0D}]
+"Compatibility Flags"=dword:00000400
+
+;Holisty
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{03C543A1-C090-418F-A1D0-FB96380D601D}]
+"Compatibility Flags"=dword:00000400
+
+;xxxtoolbar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{12398DD6-40AA-4C40-A4EC-A42CFC0DE797}]
+"Compatibility Flags"=dword:00000400
+
+;Free Access Plugin
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{15AD4789-CDB4-47E1-A9DA-992EE8E6BAD6}]
+"Compatibility Flags"=dword:00000400
+
+;新浪点点通
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{15DDE989-CD45-4561-BF99-D22C0D5C2B74}]
+"Compatibility Flags"=dword:00000400
+
+;3721上网助手
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{1B0E7716-898E-48CC-9690-4E338E8DE1D3}]
+"Compatibility Flags"=dword:00000400
+
+;搜狐视频播放器
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{2D0C7226-747E-11D6-83F0-00E04C4A2F90}]
+"Compatibility Flags"=dword:00000400
+
+;直达网址
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{32B88AFD-33DA-4E17-BE89-1029DE44DED6}]
+"Compatibility Flags"=dword:00000400
+
+;SearchIt Toolbar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{3717DF57-0396-463D-98B7-647C7DC6898A}]
+"Compatibility Flags"=dword:00000400
+
+;3721网络实名(新版)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{4522DBFE-14CD-4A59-AC2A-54BADFDD6D53}]
+"Compatibility Flags"=dword:00000400
+
+;搜狐工具栏
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{484FF54A-CC44-467E-9C31-5B89FC753007}]
+"Compatibility Flags"=dword:00000400
+
+;3721中文邮
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{4EDBBAEA-F509-49F6-94D1-ECEC4BE5B686}]
+"Compatibility Flags"=dword:00000400
+
+;Alexa Toolbar 7
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{69A72A8A-84ED-4A75-8CE7-263DBEF3E5D3}]
+;"Compatibility Flags"=dword:00000400
+
+;3721上网助手(新版)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{7CA83CF1-3AEA-42D0-A4E3-1594FC6E48B2}]
+"Compatibility Flags"=dword:00000400
+
+;Sexxx拨号程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{7EB2A76C-97AE-4CF3-9C6A-EA0F61F137E1}]
+"Compatibility Flags"=dword:00000400
+
+;DuDu加速器
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{8135EF31-FE8C-4C6E-A18A-F59944C3A488}]
+"Compatibility Flags"=dword:00000400
+
+;Ahmm Dialers
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{8522F9B3-38C5-4AA4-AE40-7401F1BBC851}]
+"Compatibility Flags"=dword:00000400
+
+;3721升级包
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{8D898B17-976D-44C1-84E6-AF38842AC9EC}]
+"Compatibility Flags"=dword:00000400
+
+;新浪IE通
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{98FA5667-513F-4F15-8A15-C171477B8847}]
+"Compatibility Flags"=dword:00000400
+
+;CNNIC通用域名
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{9A578C98-3C2F-4630-890B-FC04196EF420}]
+"Compatibility Flags"=dword:00000400
+
+;百度搜霸
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{9BBC1154-218D-453C-97F6-A06582224D81}]
+"Compatibility Flags"=dword:00000400
+
+;3721网络实名
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{B83FC273-3522-4CC6-92EC-75CC86678DA4}]
+"Compatibility Flags"=dword:00000400
+
+;百度搜索伴侣
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{BC207F7D-3E63-4ACA-99B5-FB5F8428200C}]
+"Compatibility Flags"=dword:00000400
+
+;搜狐工具栏(新版)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{CE7C3CF0-4B15-11D1-ABED-709549C10000}]
+"Compatibility Flags"=dword:00000400
+
+;网易泡泡
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{CF051549-EDE1-40F5-B440-BCD646CF2C25}]
+"Compatibility Flags"=dword:00000400
+
+;PortalSearchingToolbar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{D6862A22-1DD6-11D3-BB7C-444553540000}]
+"Compatibility Flags"=dword:00000400
+
+;Mtree Dialers 1
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{E8EDB60C-951E-4130-93DC-FAF1AD25F8E7}]
+"Compatibility Flags"=dword:00000400
+
+;0006_cracks_2
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{EF86873F-04C2-4A95-A373-5703C08EFC7B}]
+"Compatibility Flags"=dword:00000400
+
+;IEbardownload
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{F504CF55-2AA9-4752-B2DD-01D06A81D93E}]
+"Compatibility Flags"=dword:00000400
+
+;WeatherCAST
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{FC327B3F-377B-4CB7-8B61-27CD69816BC3}]
+"Compatibility Flags"=dword:00000400
+
+;Mtree Dialers 2
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{FC87A650-207D-4392-A6A1-82ADBC56FA64}]
+"Compatibility Flags"=dword:00000400
+
+;DIY Bar
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{58CDB34C-B4D7-418B-A0FB-C4C8A01C2F0E}]
+"Compatibility Flags"=dword:00000400
+
+;Shell.Application
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{13709620-C279-11CE-A49E-444553540000}]
+"Compatibility Flags"=dword:00000400
+
+;天下搜索
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{56A7DC70-E102-4408-A34A-AE06FEF01586}]
+"Compatibility Flags"=dword:00000400
+
+;JView Profiler 安全更新程序 (KB903235)
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{03D9F3F2-B0E3-11D2-B081-006008039BF0}]
+"Compatibility Flags"=dword:00000400
+
+;yisou一搜工具条
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{67A1E287-07CD-476b-AE1F-694939AB8589}]
+"Compatibility Flags"=dword:00000400
+
+;diybar2.dll
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{28E0FA88-ABA8-4937-A247-3031F1A11165}]
+"Compatibility Flags"=dword:00000400
+
+;搜索挂接 - 上网助手2005，上网助手2005
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{BB936323-19FA-4521-BA29-ECA6A121BC78}]
+"Compatibility Flags"=dword:00000400
+
+;博客网
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{4DA2EE61-6399-4C39-AEB9-0D990E610D29}]
+"Compatibility Flags"=dword:00000400
+
+;虎翼DIY吧
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{0A00D11E-B1E7-44b5-AD88-C9190876AAC4}]
+"Compatibility Flags"=dword:00000400
+
+;Gator 是一款设计用来自动开发基于WEB表单的程序
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{42040532-2221-4EF7-8F16-9779AB7AAA98}]
+"Compatibility Flags"=dword:00000400
+
+;DuDu通
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{E4EF3635-F86D-4371-8F09-5DFC66B8BF20}]
+"Compatibility Flags"=dword:00000400
+
+;阿里巴巴商务通
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{09F59435-7814-48ED-A73A-96FF861A91EB}]
+"Compatibility Flags"=dword:00000400
+
+;Alibaba 1
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{8601658B-9360-00C1-AE00-00C03EA25D91}]
+"Compatibility Flags"=dword:00000400
+
+;信天搜霸
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{051299DE-2CFD-4EA8-A432-F0429B4E7A5D}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00000000-0007-5041-4354-0020E48020AF}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00000000-5eb9-11d5-9d45-009027c14662}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00000000-623A-11D4-BCDB-005004131771}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00000000-8633-1405-0B53-2C8830E9FAEC}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{000000F1-34E3-4633-87C6-1AA7A44296DA}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00000178-CD4A-447a-BCF9-6FD0096B5527}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{00001015-A15C-11D4-97A4-0050BF0FBE67}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{001F2570-5DF5-11d3-B991-00A0C9BB0874}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{002BC4A5-C3AE-4AE1-9430-90DB2F506A58}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{02336F51-24CA-4422-AB63-18841ADF35E6}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{02478D28-C3F9-4efb-9B51-7695ECA05670}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{02478D38-C3F9-4EFB-9B51-7695ECA05670}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{029CA12C-89C1-46a7-A3C7-82F2F98635CB}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{02C20140-76F8-4763-83D5-B660107B7A90}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{02DCA195-602B-4B1F-83FF-381B7E804BDB}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{0352960F-47BE-11D5-AB93-00D0B760B4EB}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{04047354-D353-11D2-B3EB-0060B03C5581}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{04719991-296F-4958-AA0F-FA25FFA5008B}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{0494D0D1-F8E0-41ad-92A3-14154ECE70AC}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{0494D0D9-F8E0-41ad-92A3-14154ECE70AC}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{69FD62B1-0216-4C31-8D55-840ED86B7C8F}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{6A85D97D-665D-4825-8341-9501AD9F56A3}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{6ABC861A-31E7-4d91-B43B-D3C98F22A5C0}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{6AC15BAC-8AE7-11D3-A458-0000C07BA55F}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{6ACD11BD-4CA0-4283-A8D8-872B9BA289B6}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{6AF9BC61-3CC5-42A7-82D1-FFC2562A7289}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{6B12DABB-0B7C-44FA-B0B3-4BAFF3790256}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{79926508-C134-485E-B17D-8F89B52275DD}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{79E0C1C0-316D-11D5-A72A-006097BFA1AC}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{834944D2-3264-4FF8-9594-7F09F7ACBDF8}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{83AEDED7-3418-3A09-AECD-134A43C12CD3}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{86BC8440-8693-4076-A144-6BAF942B40B0}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{92F02779-6D88-4958-8AD3-83C12D86ADC7}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{954F618B-0DEC-4D1A-9317-E0FC96F87865}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{972566B2-93BF-41AA-B06D-5F81DB7E38E1}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{98A62E3F-A8C5-4EF0-8A00-C70CF9D18A89}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{9A48BC95-B995-4F03-AC14-E69F0FB0B272}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{A23817F2-733B-4BC5-8DED-C1B9B4BBF93C}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{A2A63268-7BBE-48DC-B462-7AB5812DB159}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{A8739816-022C-11D6-A85D-00C04F9AEAFB}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{B225B89D-5E95-4194-98E8-149993071B31}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{C22D6D40-47D8-40FE-825A-CC7F4D88B3B8}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{C50341E9-CDC1-4377-AB88-3486CCD0FDA1}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{E2F2B9D0-96B9-4B25-B90C-636ECB207D18}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{DD7DBEA0-DDF5-49DE-85A3-215FF52E09F2}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{EF9F1C48-1A63-495A-9317-B7B71B34A9CF}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{F43BD772-ABDD-43b7-A96A-3E9E61946EC0}]
+"Compatibility Flags"=dword:00000400
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{F4B47EEA-5D5D-4055-A6B5-ED59CC3C5BB3}]
+"Compatibility Flags"=dword:00000400
+
+;3721新版
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{C22D6D40-47D8-40FE-825A-CC7F4D88B3B8}]
+"Compatibility Flags"=dword:00000400
+
+;3721新版
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{4EA20CD0-BF89-4666-9DB1-B5410D27DA54}]
+"Compatibility Flags"=dword:00000400
+
+;dudu加速器
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{EF9F1C48-1A63-495A-9317-B7B71B34A9CF}]
+"Compatibility Flags"=dword:00000400
+
+;alibab商务直通车
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{850B69E4-90DB-4F45-8621-891BF35A5B53}]
+"Compatibility Flags"=dword:00000400
+
+;很棒小秘书
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{EF248BC9-F17D-4024-8868-71A5D22C667C}]
+"Compatibility Flags"=dword:00000400
+
+;很棒小秘书
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{616D4040-5712-4F0F-BCF1-5C6420A99E14}]
+"Compatibility Flags"=dword:00000400
+
+;yahoo助手
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{406F94F0-504F-4a40-8DFD-58B0666ABEBD}]
+"Compatibility Flags"=dword:00000400
+
+;yahoo助手
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{57421194-58FB-49ae-9B4F-FD48869B9AD4}]
+"Compatibility Flags"=dword:00000400
+
+;Microsoft DirectAnimation Path
+;http://www.microsoft.com/technet/security/advisory/925444.mspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\ActiveX Compatibility\{D7A7D7C3-D47F-11D0-89D3-00A0C90833E6}]
+"Compatibility Flags"=dword:00000400

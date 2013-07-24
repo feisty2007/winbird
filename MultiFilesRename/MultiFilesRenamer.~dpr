@@ -1,0 +1,15 @@
+program MultiFilesRenamer;
+
+uses
+  Forms,
+  frmMainMFR in 'frmMainMFR.pas' {Form1},
+  frmSelectRangeUnit in 'frmSelectRangeUnit.pas' {frmSelectRange};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmSelectRange, frmSelectRange);
+  Application.Run;
+end.

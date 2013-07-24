@@ -1,0 +1,26 @@
+BCC.DIR=C:\Borland\BCC55
+INCLUDE=${BCC.DIR}\include
+LIB=${BCC.DIR}\lib
+PSDK_LIB = ${LIB}\PSDK
+
+APP = minisvr
+
+LINKFLAG = -c -x -aa -Gn -r -V40
+OBJ_FILES = minisvr.obj c0w32.obj 
+EXE_FILE = ${APP}.scr
+LIB_FILES = import32.lib cw32.lib advapi32.lib gscrnsave.lib
+MAP_FILES =
+DEF_FILES = ${APP}.def
+RES_FILES = ${APP}.res
+
+minisvr.scr: minisvr.obj minisvr.res 
+	${BCC.DIR}\bin\ilink32 ${LINKFLAG} ${OBJ_FILES},${EXE_FILE},${MAP_FILES},${LIB_FILES},${DEF_FILES},${RES_FILES}
+	
+minisvr.obj: minisvr.c
+	${BCC.DIR}\bin\bcc32 -c -tW ${APP}.c
+		
+minisvr.res: minisvr.rc
+	${BCC.DIR}\bin\brc32 ${APP}.rc
+	
+clean:
+	del *.obj

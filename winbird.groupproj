@@ -1,0 +1,49 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{f0e22eb5-b6f5-42d3-9a85-904bec999868}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="ModifyWin">
+    <MSBuild Projects="ModifyWin.dproj" Targets="" />
+  </Target>
+  <Target Name="ModifyWin:Clean">
+    <MSBuild Projects="ModifyWin.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="ModifyWin:Make">
+    <MSBuild Projects="ModifyWin.dproj" Targets="Make" />
+  </Target>
+  <Target Name="ModifyWin_ENG">
+    <MSBuild Projects="ENG\ModifyWin_ENG.bdsproj" Targets="" />
+  </Target>
+  <Target Name="ModifyWin_ENG:Clean">
+    <MSBuild Projects="ENG\ModifyWin_ENG.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="ModifyWin_ENG:Make">
+    <MSBuild Projects="ENG\ModifyWin_ENG.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="ModifyWin_chs">
+    <MSBuild Projects="chs\ModifyWin_chs.bdsproj" Targets="" />
+  </Target>
+  <Target Name="ModifyWin_chs:Clean">
+    <MSBuild Projects="chs\ModifyWin_chs.bdsproj" Targets="Clean" />
+  </Target>
+  <Target Name="ModifyWin_chs:Make">
+    <MSBuild Projects="chs\ModifyWin_chs.bdsproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="ModifyWin;ModifyWin_ENG;ModifyWin_chs" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="ModifyWin:Clean;ModifyWin_ENG:Clean;ModifyWin_chs:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="ModifyWin:Make;ModifyWin_ENG:Make;ModifyWin_chs:Make" />
+  </Target>
+</Project>

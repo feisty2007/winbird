@@ -1,0 +1,15 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#3'"'#1#6'Height'#2'R'#3'Top'#3#149#0#5'Widt'
+  +'h'#3#243#1#18'HorzScrollBar.Page'#3#242#1#18'VertScrollBar.Page'#2'Q'#13'Ac'
+  +'tiveControl'#7#7'Button1'#11'BorderIcons'#11#12'biSystemMenu'#10'biMinimize'
+  +#0#11'BorderStyle'#7#8'bsSingle'#7'Caption'#6#4'Main'#12'ClientHeight'#2'R'
+  +#11'ClientWidth'#3#243#1#0#6'TLabel'#6'Label1'#4'Left'#2#16#6'Height'#2#13#3
+  +'Top'#2#24#5'Width'#3#171#1#7'Caption'#6'GPress Unlock to Allow Outlook2007 '
+  +'to View Attachment of Executable File'#11'ParentColor'#8#0#0#7'TButton'#7'B'
+  +'utton1'#4'Left'#3#240#0#6'Height'#2#25#3'Top'#2'0'#5'Width'#2'K'#7'Caption'
+  +#6#6'Unlock'#7'OnClick'#7#12'Button1Click'#8'TabOrder'#2#0#0#0#7'TButton'#7
+  +'Button2'#4'Left'#3'h'#1#6'Height'#2#25#3'Top'#2'0'#5'Width'#2'K'#7'Caption'
+  +#6#4'Lock'#7'OnClick'#7#12'Button2Click'#8'TabOrder'#2#1#0#0#0
+]);

@@ -1,0 +1,74 @@
+object Form1: TForm1
+  Left = 270
+  Height = 403
+  Top = 169
+  Width = 481
+  HorzScrollBar.Page = 480
+  VertScrollBar.Page = 402
+  ActiveControl = edt_thunder_dir
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Thunder Cleaner'
+  ClientHeight = 403
+  ClientWidth = 481
+  Position = poDesktopCenter
+  object Label1: TLabel
+    Left = 27
+    Height = 13
+    Top = 345
+    Width = 199
+    Caption = 'Free Software With any Warnning! '
+    ParentColor = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 25
+    Height = 65
+    Top = 20
+    Width = 423
+    Caption = 'Select Thunder Directory'
+    ClientHeight = 47
+    ClientWidth = 419
+    TabOrder = 0
+    object edt_thunder_dir: TEdit
+      Left = 11
+      Height = 23
+      Top = 5
+      Width = 322
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Left = 349
+      Height = 25
+      Top = 5
+      Width = 56
+      Caption = '..'
+      OnClick = Button1Click
+      TabOrder = 1
+    end
+  end
+  object Button2: TButton
+    Left = 373
+    Height = 25
+    Top = 96
+    Width = 75
+    Caption = 'Begin Clear'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Memo1: TMemo
+    Left = 28
+    Height = 198
+    Top = 128
+    Width = 416
+    Lines.Strings = (
+      ''
+    )
+    TabOrder = 2
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Open existing file'
+    Filter = 'Exe File|*.exe'
+    left = 212
+    top = 183
+  end
+end

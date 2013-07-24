@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff version="1.0">
+  <file original="G:\cs\winbird\main.dfm" source-language="zh-CN" target-language="zh-CN" datatype="delphiform" tool="ETM v10.0" ts="G:\cs\winbird\main.dfm">
+    <header>
+      <prop-group name="ITEHeaderProp">
+        <prop prop-type="Version">9.0</prop>
+        <prop prop-type="SelfDateTime">39298.6387731481</prop>
+        <prop prop-type="OrigDateTime">39298.6382407407</prop>
+        <prop prop-type="XlatDateTime">39298.6382407407</prop>
+        <prop prop-type="Translated">0</prop>
+        <prop prop-type="UnTranslated">104</prop>
+      </prop-group>
+    </header>
+    <body>
+      <trans-unit id="O:Form1.Left" resname="O:Form1.Left">
+        <source>386</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">0</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Top" resname="O:Form1.Top">
+        <source>184</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">1</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Caption" resname="O:Form1.Caption">
+        <source>'Form1'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">2</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.ClientHeight" resname="O:Form1.ClientHeight">
+        <source>523</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">3</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.ClientWidth" resname="O:Form1.ClientWidth">
+        <source>529</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">4</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Color" resname="O:Form1.Color">
+        <source>clBtnFace</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">5</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Font.Charset" resname="O:Form1.Font.Charset">
+        <source>DEFAULT_CHARSET</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">6</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Font.Color" resname="O:Form1.Font.Color">
+        <source>clWindowText</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">7</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Font.Height" resname="O:Form1.Font.Height">
+        <source>-11</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">8</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Font.Name" resname="O:Form1.Font.Name">
+        <source>'Tahoma'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">9</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.Font.Style" resname="O:Form1.Font.Style">
+        <source>[]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">10</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.OldCreateOrder" resname="O:Form1.OldCreateOrder">
+        <source>False</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">11</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.OnCreate" resname="O:Form1.OnCreate">
+        <source>FormCreate</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">12</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.DesignSize[0]" resname="O:Form1.DesignSize[0]">
+        <source>529</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">13</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.DesignSize[1]" resname="O:Form1.DesignSize[1]">
+        <source>523</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">14</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.PixelsPerInch" resname="O:Form1.PixelsPerInch">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">15</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.TextHeight" resname="O:Form1.TextHeight">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">16</prop><prop prop-type="Type">TForm1</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.Left" resname="O:Form1.O:PageControl1.Left">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">17</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.Top" resname="O:Form1.O:PageControl1.Top">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">18</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.Width" resname="O:Form1.O:PageControl1.Width">
+        <source>489</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">19</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.Height" resname="O:Form1.O:PageControl1.Height">
+        <source>465</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">20</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.ActivePage" resname="O:Form1.O:PageControl1.ActivePage">
+        <source>MultiPrint</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">21</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.Anchors" resname="O:Form1.O:PageControl1.Anchors">
+        <source>[akLeft, akTop, akRight, akBottom]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387735069</prop><prop prop-type="Status">0</prop><prop prop-type="Order">22</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.TabOrder" resname="O:Form1.O:PageControl1.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">23</prop><prop prop-type="Type">TPageControl</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet1.Caption" resname="O:Form1.O:PageControl1.O:TabSheet1.Caption">
+        <source>'应用程序管理'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">24</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.Caption" resname="O:Form1.O:PageControl1.O:TabSheet2.Caption">
+        <source>'系统功能增强'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">25</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.ImageIndex" resname="O:Form1.O:PageControl1.O:TabSheet2.ImageIndex">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">26</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Left" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Left">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">27</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Top" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Top">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">28</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Width" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Width">
+        <source>241</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">29</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Height" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">30</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Caption" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.Caption">
+        <source>'添加右键进入命令行功能'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">31</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">32</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button1.OnClick">
+        <source>Button1Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">33</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Left" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Left">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">34</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Top" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Top">
+        <source>56</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">35</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Width" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Width">
+        <source>241</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">36</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Height" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">37</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Caption" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.Caption">
+        <source>'解除注册表锁定'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">38</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">39</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button2.OnClick">
+        <source>Button2Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">40</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Left" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Left">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">41</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Top" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Top">
+        <source>96</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">42</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Width" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Width">
+        <source>241</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">43</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Height" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">44</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Caption" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.Caption">
+        <source>'禁止驱动器自动运行'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">45</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.TabOrder">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">46</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet2.O:Button6.OnClick">
+        <source>Button6Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">47</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.Caption" resname="O:Form1.O:PageControl1.O:TabSheet3.Caption">
+        <source>'IE设置'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">48</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.ImageIndex" resname="O:Form1.O:PageControl1.O:TabSheet3.ImageIndex">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">49</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Left" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Left">
+        <source>56</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">50</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Top" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Top">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">51</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Width" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Width">
+        <source>297</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">52</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Height" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">53</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Caption" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.Caption">
+        <source>'解除不能修改IE主页的锁定'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">54</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">55</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet3.O:Button3.OnClick">
+        <source>Button3Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">56</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.Caption" resname="O:Form1.O:PageControl1.O:TabSheet4.Caption">
+        <source>'清除无用DLL文件'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">57</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.ImageIndex" resname="O:Form1.O:PageControl1.O:TabSheet4.ImageIndex">
+        <source>3</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">58</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.DesignSize[0]" resname="O:Form1.O:PageControl1.O:TabSheet4.DesignSize[0]">
+        <source>481</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387736806</prop><prop prop-type="Status">0</prop><prop prop-type="Order">59</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop><prop prop-type="Open">(</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.DesignSize[1]" resname="O:Form1.O:PageControl1.O:TabSheet4.DesignSize[1]">
+        <source>437</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">60</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop><prop prop-type="Close">)</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Left" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Left">
+        <source>16</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">61</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Top" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">62</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Width" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Width">
+        <source>353</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">63</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Height" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Height">
+        <source>393</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">64</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Anchors" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.Anchors">
+        <source>[akLeft, akTop, akRight, akBottom]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">65</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.ItemHeight" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.ItemHeight">
+        <source>13</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">66</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet4.O:ListBox1.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">67</prop><prop prop-type="Type">TListBox</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Left" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">68</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Top" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Top">
+        <source>24</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">69</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Width" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Width">
+        <source>75</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">70</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Height" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">71</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Anchors" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Anchors">
+        <source>[akTop, akRight]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">72</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Caption" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.Caption">
+        <source>'分析'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">73</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">74</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button4.OnClick">
+        <source>Button4Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">75</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Left" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Left">
+        <source>392</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">76</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Top" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Top">
+        <source>64</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">77</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Width" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Width">
+        <source>75</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">78</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Height" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">79</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Anchors" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Anchors">
+        <source>[akTop, akRight]</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">80</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Caption" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.Caption">
+        <source>'清理'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">81</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.TabOrder">
+        <source>2</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">82</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet4.O:Button5.OnClick">
+        <source>Button5Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">83</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet5.Caption" resname="O:Form1.O:PageControl1.O:TabSheet5.Caption">
+        <source>'系统启动项管理'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">84</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet5.ImageIndex" resname="O:Form1.O:PageControl1.O:TabSheet5.ImageIndex">
+        <source>4</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">85</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.Caption" resname="O:Form1.O:PageControl1.O:TabSheet6.Caption">
+        <source>'系统安全'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">86</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.ImageIndex" resname="O:Form1.O:PageControl1.O:TabSheet6.ImageIndex">
+        <source>5</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">87</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Left" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Left">
+        <source>48</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">88</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Top" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Top">
+        <source>32</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">89</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Width" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Width">
+        <source>289</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">90</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Height" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">91</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Caption" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.Caption">
+        <source>'删除所有默认共享(譬如C$,admin$,IPC$)'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">92</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.TabOrder">
+        <source>0</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">93</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button7.OnClick">
+        <source>Button7Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">94</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Left" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Left">
+        <source>48</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">95</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Top" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Top">
+        <source>80</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387738657</prop><prop prop-type="Status">0</prop><prop prop-type="Order">96</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Width" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Width">
+        <source>289</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">97</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Height" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Height">
+        <source>25</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">98</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Caption" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.Caption">
+        <source>'防止ICMP重定向报文的攻击'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">99</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.TabOrder" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.TabOrder">
+        <source>1</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">100</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.OnClick" resname="O:Form1.O:PageControl1.O:TabSheet6.O:Button8.OnClick">
+        <source>Button8Click</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">101</prop><prop prop-type="Type">TButton</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:MultiPrint.Caption" resname="O:Form1.O:PageControl1.O:MultiPrint.Caption">
+        <source>'MultiPrint'</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">102</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+      <trans-unit id="O:Form1.O:PageControl1.O:MultiPrint.ImageIndex" resname="O:Form1.O:PageControl1.O:MultiPrint.ImageIndex">
+        <source>6</source>
+        <prop-group name="ITEFieldProp">
+        <prop prop-type="Created">39298.6387740509</prop><prop prop-type="Status">0</prop><prop prop-type="Order">103</prop><prop prop-type="Type">TTabSheet</prop><prop prop-type="Localize">1</prop></prop-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

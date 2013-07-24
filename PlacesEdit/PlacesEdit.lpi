@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <PathDelim Value="\"/>
+    <Version Value="6"/>
+    <General>
+      <MainUnit Value="0"/>
+      <IconPath Value="./"/>
+      <TargetFileExt Value=".exe"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <ProjectVersion Value=""/>
+      <Language Value=""/>
+      <CharSet Value=""/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="PlacesEdit.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="PlacesEdit"/>
+        <UsageCount Value="21"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="main.pas"/>
+        <ComponentName Value="Form1"/>
+        <IsPartOfProject Value="True"/>
+        <ResourceFilename Value="main.lrs"/>
+        <UnitName Value="main"/>
+        <CursorPos X="18" Y="37"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\packages\base\winunits\shlobj.pp"/>
+        <UnitName Value="shlobj"/>
+        <CursorPos X="31" Y="22"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\..\..\lazarus\lcl\dialogs.pp"/>
+        <UnitName Value="Dialogs"/>
+        <CursorPos X="10" Y="496"/>
+        <TopLine Value="475"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\packages\fcl-registry\src\registry.pp"/>
+        <UnitName Value="registry"/>
+        <CursorPos X="1" Y="222"/>
+        <TopLine Value="57"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <CursorPos X="1" Y="202"/>
+        <TopLine Value="181"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="15" HistoryIndex="14">
+      <Position1>
+        <Filename Value="main.pas"/>
+        <Caret Line="317" Column="9" TopLine="291"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\packages\fcl-registry\src\registry.pp"/>
+        <Caret Line="222" Column="1" TopLine="201"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="189" Column="1" TopLine="168"/>
+      </Position3>
+      <Position4>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="193" Column="1" TopLine="172"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="194" Column="1" TopLine="173"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="195" Column="1" TopLine="174"/>
+      </Position6>
+      <Position7>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="196" Column="1" TopLine="175"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="198" Column="1" TopLine="177"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\..\..\lazarus\fpc\2.2.0\source\rtl\inc\except.inc"/>
+        <Caret Line="199" Column="1" TopLine="178"/>
+      </Position9>
+      <Position10>
+        <Filename Value="main.pas"/>
+        <Caret Line="317" Column="1" TopLine="297"/>
+      </Position10>
+      <Position11>
+        <Filename Value="main.pas"/>
+        <Caret Line="292" Column="18" TopLine="57"/>
+      </Position11>
+      <Position12>
+        <Filename Value="main.pas"/>
+        <Caret Line="42" Column="45" TopLine="41"/>
+      </Position12>
+      <Position13>
+        <Filename Value="main.pas"/>
+        <Caret Line="182" Column="34" TopLine="147"/>
+      </Position13>
+      <Position14>
+        <Filename Value="main.pas"/>
+        <Caret Line="179" Column="48" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="main.pas"/>
+        <Caret Line="38" Column="20" TopLine="1"/>
+      </Position15>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="5"/>
+    <PathDelim Value="\"/>
+    <CodeGeneration>
+      <Generate Value="Faster"/>
+    </CodeGeneration>
+    <Linking>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="RootKeys"/>
+      </Item1>
+    </Watches>
+    <Exceptions Count="2">
+      <Item1>
+        <Name Value="ECodetoolError"/>
+      </Item1>
+      <Item2>
+        <Name Value="EFOpenError"/>
+      </Item2>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
